@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Spinner Nama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Permainan Spinner Nama</h1>
+    
+    <textarea id="nameInput" placeholder="Masukkan nama-nama, pisahkan dengan koma"></textarea>
+    <button onclick="startGame()">Mulai</button>
+
+    <div class="spinner-container">
+        <canvas id="spinnerCanvas" width="300" height="300"></canvas>
+        <div class="pointer"></div>
+    </div>
+
+    <button onclick="spin()">Putar</button>
+    <button onclick="reset()">Reset</button>
+
+    <p id="chosenName"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
